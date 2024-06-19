@@ -12,6 +12,11 @@ to systems design!**
 you are most comfortable with and those that will showcase your strongest
 performance. 💪**
 
+## 🚀 Solution Design
+
+See draw.io file here [here](movie_rating_drawing.drawio)
+![Design](movie_rating_system_diagram.png)
+
 ## 🗒️ Running the solution:
 
 To run the solution:
