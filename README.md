@@ -28,6 +28,13 @@ docker compose build
 docker compose up -d
 ```
 
+After all the container are running successfully you can navigate to api documentation for each service:
+
+- For Auth Service: http://localhost:3004/api
+- For Movies Service: http://localhost:3002/api
+- For User Service: http://localhost:3001/api
+- For Rating Service: http://localhost:3003/api
+
 ## ✅ Requirements
 
 - [✅] The backend should expose RESTful endpoints to handle user input and
