@@ -1,73 +1,53 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Movie Service
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+The Movie Service is a backend service that provides information and functionality related to movies. It allows users to retrieve movie details, search for movies, and manage movies.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Features
 
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- Retrieve movie details: Users can get detailed information about a specific movie by providing its ID.
+- Retrieve movies list and you can use paging
+- Movies management (create, update, delete)
 
 ## Installation
 
-```bash
-$ yarn install
-```
+To install and run the Movie Service, follow these steps:
 
-## Running the app
+1. Navigate to the project directory: `cd movie-service`
+2. Install dependencies: `yarn install`
+3. Configure environment variables: Create a `.env` file and set the required variables.
+4. Start the server: `yarn start`
 
-```bash
-# development
-$ yarn run start
+## Usage
 
-# watch mode
-$ yarn run start:dev
+1. Start the movie service: `yarn start`
+2. Access the movie service API at `http://localhost:3000`
+3. Access the movie service API documentation at `http://localhost:3000/api`
 
-# production mode
-$ yarn run start:prod
-```
+## Technologies Used
 
-## Test
+- Node.js
+- Express.js
+- MongoDB
+- Redis
+- Jest
 
-```bash
-# unit tests
-$ yarn run test
+## API Documentation
 
-# e2e tests
-$ yarn run test:e2e
+The Movie Service provides a RESTful API with the following endpoints:
 
-# test coverage
-$ yarn run test:cov
-```
+- `POST /movies`: creates a movies in movies database.
+- `GET /movies/:id`: Retrieves detailed information about a specific movie.
+- `GET /movies`: returns movies list with the use of pagination.
+- `DELETE /movies/:id`: Removes a movie our movies database.
+- `GET /movies/:id/exist`: checks if the movie exists in our database.
+- `PUT /movies/:id` : update the information about the movie.
 
-## Support
+For detailed documentation and examples, please refer to the [API Documentation](http://localhost:3000/api).
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+## Contributing
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+Contributions to the Movie Service are welcome! If you would like to contribute, please follow the guidelines outlined in [CONTRIBUTING.md].
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+The Movie Service is open source and released under the [MIT License].
